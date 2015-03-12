@@ -11,4 +11,6 @@ end
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'motion-core-animator'
+  app.resources_dirs << Dir['coreanimator/images']
+  app.vendor_project("coreanimator", :static)
 end
